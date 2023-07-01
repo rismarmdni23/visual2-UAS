@@ -1,6 +1,6 @@
 object Form4: TForm4
-  Left = 176
-  Top = 255
+  Left = 188
+  Top = 133
   Width = 1044
   Height = 540
   Caption = 'KELAS'
@@ -14,11 +14,11 @@ object Form4: TForm4
   PixelsPerInch = 96
   TextHeight = 13
   object lbl1: TLabel
-    Left = 112
-    Top = 24
-    Width = 11
+    Left = 240
+    Top = 72
+    Width = 45
     Height = 16
-    Caption = 'Id'
+    Caption = 'Id Kelas'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -13
@@ -27,8 +27,8 @@ object Form4: TForm4
     ParentFont = False
   end
   object lbl2: TLabel
-    Left = 112
-    Top = 64
+    Left = 240
+    Top = 112
     Width = 33
     Height = 16
     Caption = 'Nama'
@@ -40,8 +40,8 @@ object Form4: TForm4
     ParentFont = False
   end
   object lbl3: TLabel
-    Left = 112
-    Top = 104
+    Left = 240
+    Top = 152
     Width = 28
     Height = 16
     Caption = 'Jenis'
@@ -53,8 +53,8 @@ object Form4: TForm4
     ParentFont = False
   end
   object lbl4: TLabel
-    Left = 112
-    Top = 136
+    Left = 240
+    Top = 192
     Width = 44
     Height = 16
     Caption = 'Jurusan'
@@ -65,88 +65,97 @@ object Form4: TForm4
     Font.Style = []
     ParentFont = False
   end
+  object lbl11: TLabel
+    Left = 424
+    Top = 16
+    Width = 169
+    Height = 31
+    Caption = 'DATA KELAS'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -27
+    Font.Name = 'Times New Roman'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
   object edt1: TEdit
-    Left = 256
-    Top = 24
-    Width = 201
+    Left = 400
+    Top = 72
+    Width = 273
     Height = 21
     TabOrder = 0
-    Text = 'edt1'
   end
   object edt2: TEdit
-    Left = 256
-    Top = 64
-    Width = 201
+    Left = 400
+    Top = 112
+    Width = 273
     Height = 21
     TabOrder = 1
-    Text = 'edt2'
   end
   object btn1: TButton
-    Left = 80
-    Top = 184
+    Left = 344
+    Top = 240
     Width = 91
     Height = 33
     Caption = 'BARU'
     TabOrder = 2
   end
   object btn2: TButton
-    Left = 208
-    Top = 184
+    Left = 448
+    Top = 240
     Width = 91
     Height = 33
     Caption = 'SIMPAN'
     TabOrder = 3
   end
   object btn3: TButton
-    Left = 328
-    Top = 184
+    Left = 552
+    Top = 240
     Width = 91
     Height = 33
     Caption = 'EDIT'
     TabOrder = 4
   end
   object btn4: TButton
-    Left = 472
-    Top = 184
+    Left = 656
+    Top = 240
     Width = 91
     Height = 33
     Caption = 'HAPUS'
     TabOrder = 5
   end
   object btn5: TButton
-    Left = 592
-    Top = 184
+    Left = 760
+    Top = 240
     Width = 91
     Height = 33
     Caption = 'BATAL'
     TabOrder = 6
   end
   object cbb1: TComboBox
-    Left = 256
-    Top = 136
-    Width = 201
+    Left = 400
+    Top = 192
+    Width = 273
     Height = 21
     ItemHeight = 13
     TabOrder = 7
-    Text = 'cbb1'
     Items.Strings = (
       'IPA'
       'IPS'
       'BAHASA INDONESIA')
   end
   object edt3: TEdit
-    Left = 256
-    Top = 96
-    Width = 201
+    Left = 400
+    Top = 152
+    Width = 273
     Height = 21
     TabOrder = 8
-    Text = 'edt3'
   end
   object dbgrd: TDBGrid
-    Left = 80
-    Top = 232
-    Width = 633
-    Height = 185
+    Left = 72
+    Top = 288
+    Width = 785
+    Height = 201
     TabOrder = 9
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
@@ -155,19 +164,36 @@ object Form4: TForm4
     TitleFont.Style = []
   end
   object btn6: TButton
-    Left = 792
-    Top = 240
-    Width = 75
-    Height = 25
+    Left = 872
+    Top = 288
+    Width = 91
+    Height = 33
     Caption = 'NEXT'
     TabOrder = 10
   end
   object btn7: TButton
-    Left = 792
-    Top = 280
-    Width = 75
-    Height = 25
+    Left = 872
+    Top = 336
+    Width = 91
+    Height = 33
     Caption = 'BACK'
     TabOrder = 11
+  end
+  object con1: TZConnection
+    ControlsCodePage = cGET_ACP
+    UTF8StringsAsWideField = False
+    AutoEncodeStrings = False
+    Port = 0
+    Left = 768
+    Top = 16
+  end
+  object zqry1: TZQuery
+    Params = <>
+    Left = 832
+    Top = 16
+  end
+  object ds1: TDataSource
+    Left = 888
+    Top = 16
   end
 end
