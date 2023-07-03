@@ -44,7 +44,7 @@ type
     btn6: TButton;
     btn7: TButton;
     con1: TZConnection;
-    zqry1: TZQuery;
+    zqryhnnnj: TZQuery;
     ds1: TDataSource;
     lbl14: TLabel;
   private

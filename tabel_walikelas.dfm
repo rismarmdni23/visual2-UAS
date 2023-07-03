@@ -1,6 +1,6 @@
 object Form2: TForm2
-  Left = 234
-  Top = 99
+  Left = 218
+  Top = 106
   Width = 1044
   Height = 540
   Caption = 'WALI KELAS'
@@ -259,6 +259,7 @@ object Form2: TForm2
     Top = 280
     Width = 785
     Height = 201
+    DataSource = ds1
     TabOrder = 14
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
@@ -283,10 +284,15 @@ object Form2: TForm2
     TabOrder = 16
   end
   object ds1: TDataSource
+    DataSet = zqry1
     Left = 960
     Top = 16
   end
   object zqry1: TZQuery
+    Connection = con1
+    Active = True
+    SQL.Strings = (
+      'select * from tb_walikelas')
     Params = <>
     Left = 904
     Top = 16
@@ -295,7 +301,13 @@ object Form2: TForm2
     ControlsCodePage = cGET_ACP
     UTF8StringsAsWideField = False
     AutoEncodeStrings = False
-    Port = 0
+    Connected = True
+    HostName = 'localhost'
+    Port = 3306
+    Database = 'risma_uas4cvisual'
+    User = 'root'
+    Protocol = 'mysql'
+    LibraryLocation = 'C:\Program Files (x86)\Borland\Zeos703\libmysql.dll'
     Left = 848
     Top = 16
   end

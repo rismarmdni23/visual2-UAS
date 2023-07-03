@@ -9,7 +9,8 @@ uses
   tabel_poin in 'tabel_poin.pas' {Form5},
   tabel_user in 'tabel_user.pas' {Form6},
   tabel_hubungan in 'tabel_hubungan.pas' {Form7},
-  tabel_riwayatpoin in 'tabel_riwayatpoin.pas' {Form8};
+  tabel_riwayatpoin in 'tabel_riwayatpoin.pas' {Form8},
+  menu in 'menu.pas' {Form9};
 
 {$R *.res}
 
@@ -23,5 +24,6 @@ begin
   Application.CreateForm(TForm6, Form6);
   Application.CreateForm(TForm7, Form7);
   Application.CreateForm(TForm8, Form8);
+  Application.CreateForm(TForm9, Form9);
   Application.Run;
 end.

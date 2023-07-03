@@ -1,6 +1,6 @@
 object Form1: TForm1
-  Left = 233
-  Top = 154
+  Left = 250
+  Top = 200
   Width = 1044
   Height = 540
   Caption = 'SISWA'
@@ -321,6 +321,7 @@ object Form1: TForm1
     Top = 344
     Width = 793
     Height = 145
+    DataSource = ds1
     TabOrder = 15
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
@@ -373,20 +374,27 @@ object Form1: TForm1
     ControlsCodePage = cGET_ACP
     UTF8StringsAsWideField = False
     AutoEncodeStrings = False
+    Connected = True
     HostName = 'localhost'
     Port = 3306
     Database = 'risma_uas4cvisual'
     User = 'root'
     Protocol = 'mysql'
+    LibraryLocation = 'C:\Program Files (x86)\Borland\Zeos703\libmysql.dll'
     Left = 856
     Top = 16
   end
-  object zqry1: TZQuery
+  object zqryhnnnj: TZQuery
+    Connection = con1
+    Active = True
+    SQL.Strings = (
+      'select * from tb_siswa')
     Params = <>
     Left = 912
     Top = 16
   end
   object ds1: TDataSource
+    DataSet = zqryhnnnj
     Left = 960
     Top = 16
   end
