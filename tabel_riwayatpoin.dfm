@@ -1,6 +1,6 @@
 object Form8: TForm8
-  Left = 371
-  Top = 157
+  Left = 235
+  Top = 165
   Width = 1044
   Height = 540
   Caption = 'RIWAYAT POIN'
@@ -257,6 +257,7 @@ object Form8: TForm8
     Top = 304
     Width = 777
     Height = 177
+    DataSource = ds1
     TabOrder = 14
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
@@ -281,6 +282,7 @@ object Form8: TForm8
     TabOrder = 16
   end
   object ds1: TDataSource
+    DataSet = zqry1
     Left = 944
     Top = 16
   end
@@ -288,11 +290,21 @@ object Form8: TForm8
     ControlsCodePage = cGET_ACP
     UTF8StringsAsWideField = False
     AutoEncodeStrings = False
-    Port = 0
+    Connected = True
+    HostName = 'localhost'
+    Port = 3306
+    Database = 'risma_uas4cvisual'
+    User = 'root'
+    Protocol = 'mysql'
+    LibraryLocation = 'C:\Program Files (x86)\Borland\Zeos703\libmysql.dll'
     Left = 824
     Top = 16
   end
   object zqry1: TZQuery
+    Connection = con1
+    Active = True
+    SQL.Strings = (
+      'select * from tb_riwayatpoint')
     Params = <>
     Left = 888
     Top = 16
