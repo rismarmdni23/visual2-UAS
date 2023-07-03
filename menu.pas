@@ -12,6 +12,8 @@ type
     lbl2: TLabel;
     btn1: TButton;
     btn2: TButton;
+    procedure btn2Click(Sender: TObject);
+    procedure btn1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -23,6 +25,18 @@ var
 
 implementation
 
+uses tabel_siswa;
+
 {$R *.dfm}
+
+procedure TForm9.btn2Click(Sender: TObject);
+begin
+Close;
+end;
+
+procedure TForm9.btn1Click(Sender: TObject);
+begin
+Form1.show;
+end;
 
 end.

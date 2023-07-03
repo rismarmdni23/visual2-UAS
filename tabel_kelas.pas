@@ -29,6 +29,8 @@ type
     zqry1: TZQuery;
     lbl11: TLabel;
     ds1: TDataSource;
+    procedure btn6Click(Sender: TObject);
+    procedure btn7Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -40,6 +42,18 @@ var
 
 implementation
 
+uses tabel_poin, tabel_orangtua;
+
 {$R *.dfm}
+
+procedure TForm4.btn6Click(Sender: TObject);
+begin
+Form5.show;
+end;
+
+procedure TForm4.btn7Click(Sender: TObject);
+begin
+Form3.show;
+end;
 
 end.

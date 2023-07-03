@@ -190,6 +190,7 @@ object Form5: TForm5
     Height = 33
     Caption = 'NEXT'
     TabOrder = 11
+    OnClick = btn6Click
   end
   object btn7: TButton
     Left = 880
@@ -198,6 +199,7 @@ object Form5: TForm5
     Height = 33
     Caption = 'BACK'
     TabOrder = 12
+    OnClick = btn7Click
   end
   object ds1: TDataSource
     DataSet = zqry1

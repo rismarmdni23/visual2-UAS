@@ -31,6 +31,8 @@ type
     zqry1: TZQuery;
     lbl11: TLabel;
     ds1: TDataSource;
+    procedure btn6Click(Sender: TObject);
+    procedure btn7Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -42,6 +44,18 @@ var
 
 implementation
 
+uses tabel_hubungan, tabel_poin;
+
 {$R *.dfm}
+
+procedure TForm6.btn6Click(Sender: TObject);
+begin
+Form7.show;
+end;
+
+procedure TForm6.btn7Click(Sender: TObject);
+begin
+Form5.show;
+end;
 
 end.

@@ -194,6 +194,7 @@ object Form6: TForm6
     Height = 33
     Caption = 'NEXT'
     TabOrder = 11
+    OnClick = btn6Click
   end
   object btn7: TButton
     Left = 880
@@ -202,6 +203,7 @@ object Form6: TForm6
     Height = 33
     Caption = 'BACK'
     TabOrder = 12
+    OnClick = btn7Click
   end
   object con1: TZConnection
     ControlsCodePage = cGET_ACP

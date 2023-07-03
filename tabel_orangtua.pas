@@ -41,6 +41,8 @@ type
     zqry1: TZQuery;
     lbl11: TLabel;
     ds1: TDataSource;
+    procedure btn6Click(Sender: TObject);
+    procedure btn7Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -52,6 +54,18 @@ var
 
 implementation
 
+uses tabel_kelas, tabel_walikelas;
+
 {$R *.dfm}
+
+procedure TForm3.btn6Click(Sender: TObject);
+begin
+Form4.show;
+end;
+
+procedure TForm3.btn7Click(Sender: TObject);
+begin
+Form2.show;
+end;
 
 end.

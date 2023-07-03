@@ -31,6 +31,8 @@ type
     lbl6: TLabel;
     con1: TZConnection;
     zqry1: TZQuery;
+    procedure btn6Click(Sender: TObject);
+    procedure btn7Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -42,6 +44,18 @@ var
 
 implementation
 
+uses tabel_riwayatpoin, tabel_user;
+
 {$R *.dfm}
+
+procedure TForm7.btn6Click(Sender: TObject);
+begin
+Form8.show;
+end;
+
+procedure TForm7.btn7Click(Sender: TObject);
+begin
+Form6.show;
+end;
 
 end.

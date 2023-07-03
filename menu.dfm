@@ -1,6 +1,6 @@
 object Form9: TForm9
-  Left = 220
-  Top = 222
+  Left = 215
+  Top = 147
   Width = 1044
   Height = 540
   Caption = 'MENU HOME'
@@ -52,6 +52,7 @@ object Form9: TForm9
     Font.Style = []
     ParentFont = False
     TabOrder = 0
+    OnClick = btn1Click
   end
   object btn2: TButton
     Left = 448
@@ -66,5 +67,6 @@ object Form9: TForm9
     Font.Style = []
     ParentFont = False
     TabOrder = 1
+    OnClick = btn2Click
   end
 end

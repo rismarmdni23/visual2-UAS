@@ -1,6 +1,6 @@
 object Form8: TForm8
-  Left = 235
-  Top = 165
+  Left = 228
+  Top = 181
   Width = 1044
   Height = 540
   Caption = 'RIWAYAT POIN'
@@ -265,21 +265,14 @@ object Form8: TForm8
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
   end
-  object btn6: TButton
+  object btn7: TButton
     Left = 880
     Top = 304
     Width = 91
     Height = 33
-    Caption = 'NEXT'
+    Caption = 'SELESAI'
     TabOrder = 15
-  end
-  object btn7: TButton
-    Left = 880
-    Top = 352
-    Width = 91
-    Height = 33
-    Caption = 'BACK'
-    TabOrder = 16
+    OnClick = btn7Click
   end
   object ds1: TDataSource
     DataSet = zqry1

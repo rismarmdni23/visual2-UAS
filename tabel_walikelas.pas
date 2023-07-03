@@ -39,6 +39,8 @@ type
     ds1: TDataSource;
     zqry1: TZQuery;
     con1: TZConnection;
+    procedure btn6Click(Sender: TObject);
+    procedure btn7Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -50,6 +52,18 @@ var
 
 implementation
 
+uses tabel_orangtua, tabel_siswa;
+
 {$R *.dfm}
+
+procedure TForm2.btn6Click(Sender: TObject);
+begin
+Form3.show;
+end;
+
+procedure TForm2.btn7Click(Sender: TObject);
+begin
+Form1.show;
+end;
 
 end.

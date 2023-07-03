@@ -1,6 +1,6 @@
 object Form2: TForm2
-  Left = 218
-  Top = 106
+  Left = 226
+  Top = 204
   Width = 1044
   Height = 540
   Caption = 'WALI KELAS'
@@ -274,6 +274,7 @@ object Form2: TForm2
     Height = 33
     Caption = 'NEXT'
     TabOrder = 15
+    OnClick = btn6Click
   end
   object btn7: TButton
     Left = 896
@@ -282,6 +283,7 @@ object Form2: TForm2
     Height = 33
     Caption = 'BACK'
     TabOrder = 16
+    OnClick = btn7Click
   end
   object ds1: TDataSource
     DataSet = zqry1

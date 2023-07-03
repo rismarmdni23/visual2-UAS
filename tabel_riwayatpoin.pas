@@ -33,12 +33,12 @@ type
     btn4: TButton;
     btn5: TButton;
     dbgrd: TDBGrid;
-    btn6: TButton;
     btn7: TButton;
     ds1: TDataSource;
     lbl10: TLabel;
     con1: TZConnection;
     zqry1: TZQuery;
+    procedure btn7Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -50,6 +50,13 @@ var
 
 implementation
 
+uses tabel_hubungan;
+
 {$R *.dfm}
+
+procedure TForm8.btn7Click(Sender: TObject);
+begin
+Form7.show;
+end;
 
 end.

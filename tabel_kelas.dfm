@@ -171,6 +171,7 @@ object Form4: TForm4
     Height = 33
     Caption = 'NEXT'
     TabOrder = 10
+    OnClick = btn6Click
   end
   object btn7: TButton
     Left = 872
@@ -179,6 +180,7 @@ object Form4: TForm4
     Height = 33
     Caption = 'BACK'
     TabOrder = 11
+    OnClick = btn7Click
   end
   object con1: TZConnection
     ControlsCodePage = cGET_ACP

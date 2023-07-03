@@ -1,6 +1,6 @@
 object Form1: TForm1
-  Left = 214
-  Top = 146
+  Left = 213
+  Top = 119
   Width = 1044
   Height = 540
   Caption = 'SISWA'
@@ -361,6 +361,7 @@ object Form1: TForm1
     Height = 33
     Caption = 'NEXT'
     TabOrder = 19
+    OnClick = btn6Click
   end
   object btn7: TButton
     Left = 880
@@ -369,6 +370,7 @@ object Form1: TForm1
     Height = 33
     Caption = 'BACK'
     TabOrder = 20
+    OnClick = btn7Click
   end
   object con1: TZConnection
     ControlsCodePage = cGET_ACP
@@ -386,6 +388,7 @@ object Form1: TForm1
   end
   object zqryhnnnj: TZQuery
     Connection = con1
+    Active = True
     SQL.Strings = (
       'select * from tb_siswa')
     Params = <>

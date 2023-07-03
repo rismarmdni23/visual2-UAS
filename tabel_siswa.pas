@@ -47,6 +47,8 @@ type
     zqryhnnnj: TZQuery;
     ds1: TDataSource;
     lbl14: TLabel;
+    procedure btn6Click(Sender: TObject);
+    procedure btn7Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -58,6 +60,18 @@ var
 
 implementation
 
+uses tabel_walikelas, menu;
+
 {$R *.dfm}
+
+procedure TForm1.btn6Click(Sender: TObject);
+begin
+Form2.show;
+end;
+
+procedure TForm1.btn7Click(Sender: TObject);
+begin
+Form9.show;
+end;
 
 end.
