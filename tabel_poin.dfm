@@ -1,6 +1,6 @@
 object Form5: TForm5
-  Left = 191
-  Top = 196
+  Left = 185
+  Top = 277
   Width = 1044
   Height = 540
   Caption = 'POIN'
@@ -175,6 +175,7 @@ object Form5: TForm5
     Top = 304
     Width = 785
     Height = 177
+    DataSource = ds1
     TabOrder = 10
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
@@ -199,6 +200,7 @@ object Form5: TForm5
     TabOrder = 12
   end
   object ds1: TDataSource
+    DataSet = zqry1
     Left = 904
     Top = 24
   end
@@ -206,11 +208,21 @@ object Form5: TForm5
     ControlsCodePage = cGET_ACP
     UTF8StringsAsWideField = False
     AutoEncodeStrings = False
-    Port = 0
+    Connected = True
+    HostName = 'localhost'
+    Port = 3306
+    Database = 'risma_uas4cvisual'
+    User = 'root'
+    Protocol = 'mysql'
+    LibraryLocation = 'C:\Program Files (x86)\Borland\Zeos703\libmysql.dll'
     Left = 760
     Top = 24
   end
   object zqry1: TZQuery
+    Connection = con1
+    Active = True
+    SQL.Strings = (
+      'select * from tb_poin')
     Params = <>
     Left = 832
     Top = 24

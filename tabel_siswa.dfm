@@ -1,6 +1,6 @@
 object Form1: TForm1
-  Left = 230
-  Top = 162
+  Left = 214
+  Top = 146
   Width = 1044
   Height = 540
   Caption = 'SISWA'
@@ -386,7 +386,6 @@ object Form1: TForm1
   end
   object zqryhnnnj: TZQuery
     Connection = con1
-    Active = True
     SQL.Strings = (
       'select * from tb_siswa')
     Params = <>
