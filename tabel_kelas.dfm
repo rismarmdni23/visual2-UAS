@@ -156,6 +156,7 @@ object Form4: TForm4
     Top = 288
     Width = 785
     Height = 201
+    DataSource = ds1
     TabOrder = 9
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
@@ -183,16 +184,27 @@ object Form4: TForm4
     ControlsCodePage = cGET_ACP
     UTF8StringsAsWideField = False
     AutoEncodeStrings = False
-    Port = 0
+    Connected = True
+    HostName = 'localhost'
+    Port = 3306
+    Database = 'risma_uas4cvisual'
+    User = 'root'
+    Protocol = 'mysql'
+    LibraryLocation = 'C:\Program Files (x86)\Borland\Zeos703\libmysql.dll'
     Left = 768
     Top = 16
   end
   object zqry1: TZQuery
+    Connection = con1
+    Active = True
+    SQL.Strings = (
+      'select * from tb_kelas')
     Params = <>
     Left = 832
     Top = 16
   end
   object ds1: TDataSource
+    DataSet = zqry1
     Left = 888
     Top = 16
   end
