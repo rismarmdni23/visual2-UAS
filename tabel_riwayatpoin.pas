@@ -50,13 +50,13 @@ var
 
 implementation
 
-uses tabel_hubungan;
+uses tabel_hubungan, menu;
 
 {$R *.dfm}
 
 procedure TForm8.btn7Click(Sender: TObject);
 begin
-Form7.show;
+Form9.show;
 end;
 
 end.

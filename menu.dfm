@@ -3,7 +3,7 @@ object Form9: TForm9
   Top = 147
   Width = 1044
   Height = 540
-  Caption = 'MENU HOME'
+  Caption = 'x'
   Color = clMoneyGreen
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText

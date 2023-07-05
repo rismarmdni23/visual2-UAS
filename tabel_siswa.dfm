@@ -1,6 +1,6 @@
 object Form1: TForm1
-  Left = 213
-  Top = 119
+  Left = 203
+  Top = 149
   Width = 1044
   Height = 540
   Caption = 'SISWA'
@@ -246,6 +246,7 @@ object Form1: TForm1
     Height = 33
     Caption = 'BARU'
     TabOrder = 6
+    OnClick = btn1Click
   end
   object btn2: TButton
     Left = 432
@@ -254,6 +255,7 @@ object Form1: TForm1
     Height = 33
     Caption = 'SIMPAN'
     TabOrder = 7
+    OnClick = btn2Click
   end
   object btn3: TButton
     Left = 544
@@ -262,6 +264,7 @@ object Form1: TForm1
     Height = 33
     Caption = 'EDIT'
     TabOrder = 8
+    OnClick = btn3Click
   end
   object btn4: TButton
     Left = 656
@@ -270,6 +273,7 @@ object Form1: TForm1
     Height = 33
     Caption = 'HAPUS'
     TabOrder = 9
+    OnClick = btn4Click
   end
   object btn5: TButton
     Left = 768
@@ -386,7 +390,7 @@ object Form1: TForm1
     Left = 856
     Top = 16
   end
-  object zqryhnnnj: TZQuery
+  object zqry1: TZQuery
     Connection = con1
     Active = True
     SQL.Strings = (
@@ -396,7 +400,7 @@ object Form1: TForm1
     Top = 16
   end
   object ds1: TDataSource
-    DataSet = zqryhnnnj
+    DataSet = zqry1
     Left = 960
     Top = 16
   end
