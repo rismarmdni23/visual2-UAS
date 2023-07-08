@@ -282,6 +282,7 @@ object Form1: TForm1
     Height = 33
     Caption = 'BATAL'
     TabOrder = 10
+    OnClick = btn5Click
   end
   object edt6: TEdit
     Left = 656
@@ -332,6 +333,7 @@ object Form1: TForm1
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+    OnCellClick = dbgrd1CellClick
   end
   object edt8: TEdit
     Left = 656
