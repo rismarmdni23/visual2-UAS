@@ -1,6 +1,6 @@
 object Form3: TForm3
-  Left = 212
-  Top = 227
+  Left = 218
+  Top = 154
   Width = 1044
   Height = 540
   Caption = 'ORANG TUA'
@@ -193,7 +193,7 @@ object Form3: TForm3
   end
   object edt6: TEdit
     Left = 632
-    Top = 128
+    Top = 96
     Width = 273
     Height = 21
     TabOrder = 5
@@ -205,6 +205,7 @@ object Form3: TForm3
     Height = 33
     Caption = 'BARU'
     TabOrder = 6
+    OnClick = btn1Click
   end
   object btn2: TButton
     Left = 424
@@ -213,6 +214,7 @@ object Form3: TForm3
     Height = 33
     Caption = 'SIMPAN'
     TabOrder = 7
+    OnClick = btn2Click
   end
   object btn3: TButton
     Left = 536
@@ -221,6 +223,7 @@ object Form3: TForm3
     Height = 33
     Caption = 'EDIT'
     TabOrder = 8
+    OnClick = btn3Click
   end
   object btn4: TButton
     Left = 648
@@ -229,6 +232,7 @@ object Form3: TForm3
     Height = 33
     Caption = 'HAPUS'
     TabOrder = 9
+    OnClick = btn4Click
   end
   object btn5: TButton
     Left = 760
@@ -237,6 +241,7 @@ object Form3: TForm3
     Height = 33
     Caption = 'BATAL'
     TabOrder = 10
+    OnClick = btn5Click
   end
   object cbb1: TComboBox
     Left = 208
@@ -251,7 +256,7 @@ object Form3: TForm3
   end
   object edt7: TEdit
     Left = 632
-    Top = 96
+    Top = 128
     Width = 273
     Height = 21
     TabOrder = 12
@@ -292,6 +297,7 @@ object Form3: TForm3
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+    OnCellClick = dbgrd1CellClick
   end
   object btn6: TButton
     Left = 872
