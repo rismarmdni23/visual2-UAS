@@ -1,6 +1,6 @@
 object Form5: TForm5
-  Left = 185
-  Top = 277
+  Left = 193
+  Top = 134
   Width = 1044
   Height = 540
   Caption = 'POIN'
@@ -119,6 +119,7 @@ object Form5: TForm5
     Height = 33
     Caption = 'BARU'
     TabOrder = 3
+    OnClick = btn1Click
   end
   object btn2: TButton
     Left = 448
@@ -127,6 +128,7 @@ object Form5: TForm5
     Height = 33
     Caption = 'SIMPAN'
     TabOrder = 4
+    OnClick = btn2Click
   end
   object btn3: TButton
     Left = 552
@@ -135,6 +137,7 @@ object Form5: TForm5
     Height = 33
     Caption = 'EDIT'
     TabOrder = 5
+    OnClick = btn3Click
   end
   object btn4: TButton
     Left = 656
@@ -143,6 +146,7 @@ object Form5: TForm5
     Height = 33
     Caption = 'HAPUS'
     TabOrder = 6
+    OnClick = btn4Click
   end
   object btn5: TButton
     Left = 760
@@ -151,6 +155,7 @@ object Form5: TForm5
     Height = 33
     Caption = 'BATAL'
     TabOrder = 7
+    OnClick = btn5Click
   end
   object edt4: TEdit
     Left = 408
@@ -182,6 +187,7 @@ object Form5: TForm5
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+    OnCellClick = dbgrd1CellClick
   end
   object btn6: TButton
     Left = 880
