@@ -119,6 +119,7 @@ object Form6: TForm6
     Height = 33
     Caption = 'BARU'
     TabOrder = 3
+    OnClick = btn1Click
   end
   object btn2: TButton
     Left = 448
@@ -127,6 +128,7 @@ object Form6: TForm6
     Height = 33
     Caption = 'SIMPAN'
     TabOrder = 4
+    OnClick = btn2Click
   end
   object btn3: TButton
     Left = 552
@@ -135,6 +137,7 @@ object Form6: TForm6
     Height = 33
     Caption = 'EDIT'
     TabOrder = 5
+    OnClick = btn3Click
   end
   object btn4: TButton
     Left = 656
@@ -143,6 +146,7 @@ object Form6: TForm6
     Height = 33
     Caption = 'HAPUS'
     TabOrder = 6
+    OnClick = btn4Click
   end
   object btn5: TButton
     Left = 760
@@ -186,6 +190,7 @@ object Form6: TForm6
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+    OnCellClick = dbgrd1CellClick
   end
   object btn6: TButton
     Left = 880

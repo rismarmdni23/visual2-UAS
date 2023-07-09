@@ -67,6 +67,7 @@ end;
 
 procedure TForm4.btn1Click(Sender: TObject);
 begin
+begin
 bersih;
 btn1.Enabled:= False;
 btn2.Enabled:= True;
@@ -78,33 +79,6 @@ edt2.Enabled:= True;
 edt3.Enabled:= True;
 cbb1.Enabled:= True;
 end;
-
-procedure TForm4.bersih;
-begin
-edt1.Clear;
-edt2.Clear;
-edt3.Clear;
-cbb1.Text:='';
-end;
-
-procedure TForm4.posisiawal;
-begin
-bersih;
-btn1.Enabled:= True;
-btn2.Enabled:= False;
-btn3.Enabled:= False;
-btn4.Enabled:= False;
-btn5.Enabled:= False;
-
-edt1.Enabled:= False;
-edt2.Enabled:= False;
-edt3.Enabled:= False;
-cbb1.Enabled:= False;
-end;
-
-procedure TForm4.FormShow;
-begin
-posisiawal;
 end;
 
 procedure TForm4.btn2Click(Sender: TObject);
@@ -119,7 +93,7 @@ ShowMessage('NISN SISWA TIDAK BOLEH KOSONG!');
 end else
 if edt3.Text ='' then
 begin
-ShowMessage('NAMA SISWA TIDAK BOLEH KOSONG!');
+ShowMessage('TEMPAT LAHIR SISWA TIDAK BOLEH KOSONG!');
 end else
 if cbb1.Text ='' then
 begin
@@ -138,6 +112,33 @@ posisiawal;
 end;
 end;
 
+procedure TForm4.bersih;
+begin
+edt1.Clear;
+edt2.Clear;
+edt3.Clear;
+cbb1.Text:='';
+end;
+
+procedure TForm4.posisiawal;
+begin
+btn1.Enabled:= True;
+btn2.Enabled:= False;
+btn3.Enabled:= False;
+btn4.Enabled:= False;
+btn5.Enabled:= False;
+
+edt1.Enabled:= False;
+edt2.Enabled:= False;
+edt3.Enabled:= False;
+cbb1.Enabled:= False;
+end;
+
+procedure TForm4.FormShow;
+begin
+posisiawal;
+end;
+
 procedure TForm4.btn3Click(Sender: TObject);
 begin
 if (edt1.Text= '') or (edt2.Text ='') or (edt3.Text= '') or (cbb1.Text ='')then
@@ -147,7 +148,7 @@ end else
 begin
 ShowMessage('DATA BERHASIL DIUPDATE!'); //EDIT
 zqry1.SQL.Clear;
-zqry1.SQL.Add('Update tb_kelas set id_kelas= "'+edt1.Text+'",nama_kelas ="'+edt2.Text+'",jenis="'+edt3.Text+'",jurusan="'+cbb1.Text+'" where id_kelas="'+edt1.Text+'"');
+zqry1.SQL.Add('Update tb_kelas set id_kelas= "'+edt1.Text+'",nama_kelas ="'+edt2.Text+'",jenis="'+edt3.Text+'",",jurusan="'+cbb1.Text+'" where id_kelas="'+edt1.Text+'"');
 zqry1. ExecSQL;
 
 zqry1.SQL.Clear;
@@ -199,4 +200,5 @@ btn3.Enabled:= True;
 btn4.Enabled:= True;
 btn5.Enabled:= True;
 end;
+
 end.
