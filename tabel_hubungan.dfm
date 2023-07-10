@@ -1,6 +1,6 @@
 object Form7: TForm7
-  Left = 183
-  Top = 100
+  Left = 185
+  Top = 154
   Width = 1044
   Height = 540
   Caption = 'HUBUNGAN'
@@ -126,6 +126,7 @@ object Form7: TForm7
     Height = 33
     Caption = 'BARU'
     TabOrder = 4
+    OnClick = btn1Click
   end
   object btn2: TButton
     Left = 432
@@ -134,6 +135,7 @@ object Form7: TForm7
     Height = 33
     Caption = 'SIMPAN'
     TabOrder = 5
+    OnClick = btn2Click
   end
   object btn3: TButton
     Left = 544
@@ -142,6 +144,7 @@ object Form7: TForm7
     Height = 33
     Caption = 'EDIT'
     TabOrder = 6
+    OnClick = btn3Click
   end
   object btn4: TButton
     Left = 648
@@ -150,6 +153,7 @@ object Form7: TForm7
     Height = 33
     Caption = 'HAPUS'
     TabOrder = 7
+    OnClick = btn4Click
   end
   object btn5: TButton
     Left = 768
@@ -158,6 +162,7 @@ object Form7: TForm7
     Height = 33
     Caption = 'BATAL'
     TabOrder = 8
+    OnClick = btn5Click
   end
   object cbb1: TComboBox
     Left = 400
@@ -182,6 +187,7 @@ object Form7: TForm7
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+    OnCellClick = dbgrd1CellClick
   end
   object btn6: TButton
     Left = 880
