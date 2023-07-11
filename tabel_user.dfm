@@ -210,6 +210,15 @@ object Form6: TForm6
     TabOrder = 12
     OnClick = btn7Click
   end
+  object btn8: TButton
+    Left = 880
+    Top = 232
+    Width = 89
+    Height = 33
+    Caption = 'REPORT'
+    TabOrder = 13
+    OnClick = btn8Click
+  end
   object con1: TZConnection
     ControlsCodePage = cGET_ACP
     UTF8StringsAsWideField = False
