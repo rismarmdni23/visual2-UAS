@@ -1,6 +1,6 @@
 object Form8: TForm8
-  Left = 227
-  Top = 187
+  Left = 229
+  Top = 165
   Width = 1044
   Height = 540
   Caption = 'RIWAYAT POIN'
@@ -237,6 +237,7 @@ object Form8: TForm8
     Height = 33
     Caption = 'EDIT'
     TabOrder = 11
+    OnClick = btn3Click
   end
   object btn4: TButton
     Left = 656
@@ -254,6 +255,7 @@ object Form8: TForm8
     Height = 33
     Caption = 'BATAL'
     TabOrder = 13
+    OnClick = btn5Click
   end
   object dbgrd: TDBGrid
     Left = 88
@@ -267,6 +269,7 @@ object Form8: TForm8
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+    OnCellClick = dbgrd1CellClick
   end
   object btn7: TButton
     Left = 880

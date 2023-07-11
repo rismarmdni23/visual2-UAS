@@ -195,8 +195,8 @@ begin
 edt1.Text:= zqry1.Fields[0].AsString; // DBGrid
 edt2.Text:= zqry1.Fields[1].AsString;
 edt3.Text:= zqry1.Fields[2].AsString;
-cbb1.Text:= zqry1.Fields[4].AsString;
-edt5.Text:= zqry1.Fields[2].AsString;
+cbb1.Text:= zqry1.Fields[3].AsString;
+edt5.Text:= zqry1.Fields[3].AsString;
 edt1.Enabled:= True;
 edt2.Enabled:= True;
 edt3.Enabled:= True;
