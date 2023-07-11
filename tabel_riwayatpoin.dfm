@@ -280,6 +280,15 @@ object Form8: TForm8
     TabOrder = 15
     OnClick = btn7Click
   end
+  object btn6: TButton
+    Left = 880
+    Top = 256
+    Width = 89
+    Height = 33
+    Caption = 'REPORT'
+    TabOrder = 16
+    OnClick = btn6Click
+  end
   object ds1: TDataSource
     DataSet = zqry1
     Left = 944
