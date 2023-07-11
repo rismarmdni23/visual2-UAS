@@ -423,15 +423,15 @@ object Form1: TForm1
     PreviewOptions.Zoom = 1.000000000000000000
     PrintOptions.Printer = 'Default'
     PrintOptions.PrintOnSheet = 0
-    ReportOptions.CreateDate = 45118.644327175930000000
-    ReportOptions.LastChange = 45118.675480648150000000
+    ReportOptions.CreateDate = 45118.644327175900000000
+    ReportOptions.LastChange = 45118.675480648100000000
     ScriptLanguage = 'PascalScript'
     ScriptText.Strings = (
       'begin'
       ''
       'end.')
-    Left = 48
-    Top = 16
+    Left = 72
+    Top = 8
     Datasets = <
       item
         DataSet = frxdbdtst1
