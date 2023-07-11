@@ -137,15 +137,15 @@ procedure TForm2.btn2Click(Sender: TObject);
 begin
 if edt1.Text ='' then
 begin
-ShowMessage('ID SISWA TIDAK BOLEH KOSONG!');
+ShowMessage('ID WALI KELAS TIDAK BOLEH KOSONG!');
 end else
 if edt2.Text ='' then
 begin
-ShowMessage('NISN SISWA TIDAK BOLEH KOSONG!');
+ShowMessage('NIP TIDAK BOLEH KOSONG!');
 end else
 if edt3.Text ='' then
 begin
-ShowMessage('NAMA SISWA TIDAK BOLEH KOSONG!');
+ShowMessage('NAMA TIDAK BOLEH KOSONG!');
 end else
 if cbb1.Text ='' then
 begin
@@ -153,23 +153,23 @@ ShowMessage('JENIS KELAMIN SISWA TIDAK BOLEH KOSONG!');
 end else
 if edt4.Text ='' then
 begin
-ShowMessage('NIK SISWA TIDAK BOLEH KOSONG!');
+ShowMessage('ALAMAT TIDAK BOLEH KOSONG!');
 end else
 if edt5.Text ='' then
 begin
-ShowMessage('TEMPAT LAHIR SISWA TIDAK BOLEH KOSONG!');
+ShowMessage('MATPEL TIDAK BOLEH KOSONG!');
 end else
 if edt6.Text ='' then
 begin
-ShowMessage('JURUSAN SISWA TIDAK BOLEH KOSONG!');
+ShowMessage('PENDIDIKAN TIDAK BOLEH KOSONG!');
 end else
 if edt7.Text ='' then
 begin
-ShowMessage('TELEPON SISWA TIDAK BOLEH KOSONG!');
+ShowMessage('TELPON TIDAK BOLEH KOSONG!');
 end else
 if cbb2.Text ='' then
 begin
-ShowMessage('STATUS SISWA TIDAK BOLEH KOSONG!');
+ShowMessage('STATUS TIDAK BOLEH KOSONG!');
 end else
 begin
 zqry1.SQL.Clear; //simpan
@@ -193,7 +193,7 @@ end else
 begin
 ShowMessage('DATA BERHASIL DIUPDATE!'); //EDIT
 zqry1.SQL.Clear;
-zqry1.SQL.Add('Update tb_walikelas id_walikelas= "'+edt1.Text+'",nip ="'+edt2.Text+'",nama_walikelas="'+edt3.Text+'",alamat="'+edt4.Text+'",matpel="'+edt5.Text+'",jenis_kelamin="'+cbb1.Text+'",pendidikan="'+edt6.Text+'",telpon="'+edt7.Text+'",status="'+cbb2.Text+'" where id_walikelas="'+edt1.Text+'"');
+zqry1.SQL.Add('Update tb_walikelas id_walikelas= "'+edt1.Text+'",nip ="'+edt2.Text+'",nama_walikelas="'+edt3.Text+'",jenis_kelamin="'+cbb1.Text+'",alamat="'+edt4.Text+'",matpel="'+edt5.Text+'",pendidikan="'+edt6.Text+'",telpon="'+edt7.Text+'",status="'+cbb2.Text+'" where id_walikelas="'+edt1.Text+'"');
 zqry1. ExecSQL;
 
 zqry1.SQL.Clear;
@@ -209,7 +209,7 @@ if MessageDlg('APAKAH YAKIN MENGHAPUS DATA INI?',mtWarning,[mbYes,mbNo],0)= mrye
 begin
 zqry1.SQL.Clear;
 zqry1.SQL.Add(' delete from tb_walikelas where id_walikelas="'+edt1.Text+'"');
-zqry1. ExecSQL;
+zqry1.ExecSQL;
 zqry1.SQL.Clear;
 zqry1.SQL.Add('select * from tb_walikelas');
 zqry1.Open;
@@ -242,8 +242,8 @@ cbb2.Text:= zqry1.Fields[8].AsString;
 edt1.Enabled:= True;
 edt2.Enabled:= True;
 edt3.Enabled:= True;
-
 cbb1.Enabled:= True;
+edt4.Enabled:= True;
 edt5.Enabled:= True;
 edt6.Enabled:= True;
 edt7.Enabled:= True;

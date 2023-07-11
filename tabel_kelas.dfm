@@ -1,6 +1,6 @@
 object Form4: TForm4
-  Left = 188
-  Top = 133
+  Left = 257
+  Top = 137
   Width = 1044
   Height = 540
   Caption = 'KELAS'

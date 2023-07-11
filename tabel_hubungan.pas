@@ -69,7 +69,6 @@ end;
 
 procedure TForm7.btn1Click(Sender: TObject);
 begin
-begin
 bersih;
 btn1.Enabled:= False;
 btn2.Enabled:= True;
@@ -82,33 +81,32 @@ edt3.Enabled:= True;
 cbb1.Enabled:= True;
 edt5.Enabled:= True;
 end;
-end;
 
 procedure TForm7.btn2Click(Sender: TObject);
 begin
 if edt1.Text ='' then
 begin
-ShowMessage('ID SISWA TIDAK BOLEH KOSONG!');
+ShowMessage('ID TIDAK BOLEH KOSONG!');
 end else
 if edt2.Text ='' then
 begin
-ShowMessage('NISN SISWA TIDAK BOLEH KOSONG!');
+ShowMessage('SISWA ID TIDAK BOLEH KOSONG!');
 end else
 if edt3.Text ='' then
 begin
-ShowMessage('NAMA SISWA TIDAK BOLEH KOSONG!');
-end else
-if edt5.Text ='' then
-begin
-ShowMessage('TEMPAT LAHIR SISWA TIDAK BOLEH KOSONG!');
+ShowMessage('ORTU ID TIDAK BOLEH KOSONG!');
 end else
 if cbb1.Text ='' then
 begin
-ShowMessage('JENIS KELAMIN SISWA TIDAK BOLEH KOSONG!');
+ShowMessage('STATUS HUBUNGAN TIDAK BOLEH KOSONG!');
+end else
+if edt5.Text ='' then
+begin
+ShowMessage('KETERANGAN TIDAK BOLEH KOSONG!');
 end else
 begin
 zqry1.SQL.Clear; //simpan
-zqry1.SQL.Add('insert into tb_hubungan values ("'+edt1.Text+'","'+edt2.Text+'","'+edt3.Text+'","'+edt5.Text+'","'+cbb1.Text+'")');
+zqry1.SQL.Add('insert into tb_hubungan values ("'+edt1.Text+'","'+edt2.Text+'","'+edt3.Text+'","'+cbb1.Text+'","'+edt5.Text+'")');
 zqry1.ExecSQL;
 
 zqry1.SQL.Clear;

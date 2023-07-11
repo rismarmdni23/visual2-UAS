@@ -69,7 +69,6 @@ end;
 
 procedure TForm5.btn1Click(Sender: TObject);
 begin
-begin
 bersih;
 btn1.Enabled:= False;
 btn2.Enabled:= True;
@@ -82,29 +81,28 @@ edt3.Enabled:= True;
 edt4.Enabled:= True;
 cbb1.Enabled:= True;
 end;
-end;
 
 procedure TForm5.btn2Click(Sender: TObject);
 begin
 if edt1.Text ='' then
 begin
-ShowMessage('ID SISWA TIDAK BOLEH KOSONG!');
+ShowMessage('ID POIN TIDAK BOLEH KOSONG!');
 end else
 if edt2.Text ='' then
 begin
-ShowMessage('NISN SISWA TIDAK BOLEH KOSONG!');
+ShowMessage('NAMA TIDAK BOLEH KOSONG!');
 end else
 if edt3.Text ='' then
 begin
-ShowMessage('NAMA SISWA TIDAK BOLEH KOSONG!');
+ShowMessage('BOBOT TIDAK BOLEH KOSONG!');
 end else
 if edt4.Text ='' then
 begin
-ShowMessage('TEMPAT LAHIR SISWA TIDAK BOLEH KOSONG!');
+ShowMessage('JENIS TIDAK BOLEH KOSONG!');
 end else
 if cbb1.Text ='' then
 begin
-ShowMessage('JENIS KELAMIN SISWA TIDAK BOLEH KOSONG!');
+ShowMessage('STATUS TIDAK BOLEH KOSONG!');
 end else
 begin
 zqry1.SQL.Clear; //simpan
@@ -161,7 +159,7 @@ zqry1.SQL.Add('Update tb_poin set id_poin= "'+edt1.Text+'",nama_siswa ="'+edt2.T
 zqry1. ExecSQL;
 
 zqry1.SQL.Clear;
-zqry1.SQL.Add('select * from tb_siswa');
+zqry1.SQL.Add('select * from tb_poin');
 zqry1.Open;
 posisiawal;
 end;

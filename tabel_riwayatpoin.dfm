@@ -1,6 +1,6 @@
 object Form8: TForm8
-  Left = 228
-  Top = 181
+  Left = 227
+  Top = 187
   Width = 1044
   Height = 540
   Caption = 'RIWAYAT POIN'
@@ -180,14 +180,14 @@ object Form8: TForm8
   end
   object edt6: TEdit
     Left = 616
-    Top = 128
+    Top = 64
     Width = 289
     Height = 21
     TabOrder = 5
   end
   object edt7: TEdit
     Left = 616
-    Top = 64
+    Top = 128
     Width = 289
     Height = 21
     TabOrder = 6
@@ -219,6 +219,7 @@ object Form8: TForm8
     Height = 33
     Caption = 'BARU'
     TabOrder = 9
+    OnClick = btn1Click
   end
   object btn2: TButton
     Left = 408
@@ -227,6 +228,7 @@ object Form8: TForm8
     Height = 33
     Caption = 'SIMPAN'
     TabOrder = 10
+    OnClick = btn2Click
   end
   object btn3: TButton
     Left = 536
@@ -243,6 +245,7 @@ object Form8: TForm8
     Height = 33
     Caption = 'HAPUS'
     TabOrder = 12
+    OnClick = btn4Click
   end
   object btn5: TButton
     Left = 776

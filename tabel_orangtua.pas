@@ -91,8 +91,8 @@ edt3.Enabled:= True;
 cbb1.Enabled:= True;
 edt4.Enabled:= True;
 edt5.Enabled:= True;
-edt5.Enabled:= True;
 edt6.Enabled:= True;
+edt7.Enabled:= True;
 cbb2.Enabled:= True;
 cbb3.Enabled:= True;
 end;
@@ -105,6 +105,7 @@ edt3.Clear;
 cbb1.Text:='';
 edt4.Clear;
 edt5.Clear;
+edt6.Clear;
 edt6.Clear;
 cbb2.Text:='';
 cbb3.Text:='';
@@ -126,6 +127,7 @@ cbb1.Enabled:= False;
 edt4.Enabled:= False;
 edt5.Enabled:= False;
 edt6.Enabled:= False;
+edt7.Enabled:= False;
 cbb2.Enabled:= False;
 cbb3.Enabled:= False;
 end;
@@ -139,47 +141,47 @@ procedure TForm3.btn2Click(Sender: TObject);
 begin
 if edt1.Text ='' then
 begin
-ShowMessage('ID SISWA TIDAK BOLEH KOSONG!');
+ShowMessage('ID ORANG TUA TIDAK BOLEH KOSONG!');
 end else
 if edt2.Text ='' then
 begin
-ShowMessage('NISN SISWA TIDAK BOLEH KOSONG!');
+ShowMessage('NIK TIDAK BOLEH KOSONG!');
 end else
 if edt3.Text ='' then
 begin
-ShowMessage('NAMA SISWA TIDAK BOLEH KOSONG!');
-end else
-if edt4.Text ='' then
-begin
-ShowMessage('NIK SISWA TIDAK BOLEH KOSONG!');
-end else
-if edt5.Text ='' then
-begin
-ShowMessage('TEMPAT LAHIR SISWA TIDAK BOLEH KOSONG!');
+ShowMessage('NAMA TIDAK BOLEH KOSONG!');
 end else
 if cbb1.Text ='' then
 begin
 ShowMessage('JENIS KELAMIN SISWA TIDAK BOLEH KOSONG!');
 end else
+if edt4.Text ='' then
+begin
+ShowMessage('ALAMAT TIDAK BOLEH KOSONG!');
+end else
+if edt5.Text ='' then
+begin
+ShowMessage('TELPON TIDAK BOLEH KOSONG!');
+end else
 if edt6.Text ='' then
 begin
-ShowMessage('TINGKAT KELAS SISWA TIDAK BOLEH KOSONG!');
+ShowMessage('PENDIDIKAN TIDAK BOLEH KOSONG!');
 end else
 if edt7.Text ='' then
 begin
-ShowMessage('TINGKAT KELAS SISWA TIDAK BOLEH KOSONG!');
+ShowMessage('PEKERJAAN TIDAK BOLEH KOSONG!');
 end else
 if cbb3.Text ='' then
 begin
-ShowMessage('JURUSAN SISWA TIDAK BOLEH KOSONG!');
+ShowMessage('AGAMA TIDAK BOLEH KOSONG!');
 end else
 if cbb2.Text ='' then
 begin
-ShowMessage('STATUS SISWA TIDAK BOLEH KOSONG!');
+ShowMessage('STATUS TIDAK BOLEH KOSONG!');
 end else
 begin
 zqry1.SQL.Clear; //simpan
-zqry1.SQL.Add('insert into tb_orangtua values ("'+edt1.Text+'","'+edt2.Text+'","'+edt3.Text+'","'+edt4.Text+'","'+edt5.Text+'","'+cbb1.Text+'","'+edt6.Text+'","'+edt7.Text+'","'+cbb3.Text+'","'+cbb2.Text+'")');
+zqry1.SQL.Add('insert into tb_orangtua values ("'+edt1.Text+'","'+edt2.Text+'","'+edt3.Text+'","'+cbb1.Text+'","'+edt4.Text+'","'+edt5.Text+'","'+edt6.Text+'","'+edt7.Text+'","'+cbb2.Text+'","'+cbb3.Text+'")');
 zqry1.ExecSQL;
 
 zqry1.SQL.Clear;
@@ -192,14 +194,14 @@ end;
 
 procedure TForm3.btn3Click(Sender: TObject);
 begin
-if (edt1.Text= '') or (edt2.Text ='') or (edt3.Text= '') or (edt4.Text ='') or (edt5.Text ='') or (cbb1.Text ='') or (edt6.Text ='')  or (edt7.Text ='') or (cbb2.Text ='') or (cbb3.Text ='')then
+if (edt1.Text= '') or (edt2.Text ='') or (edt3.Text= '') or (cbb1.Text ='') or (edt4.Text ='') or (edt5.Text ='') or (edt6.Text ='')  or (edt7.Text ='') or (cbb2.Text ='') or (cbb3.Text ='')then
 begin
 ShowMessage('INPUTAN WAJIB DIISI!');
 end else
 begin
 ShowMessage('DATA BERHASIL DIUPDATE!'); //EDIT
 zqry1.SQL.Clear;
-zqry1.SQL.Add('Update tb_orangtua set id_orangtua= "'+edt1.Text+'",nik ="'+edt2.Text+'",nama_orangtua="'+edt3.Text+'",alamat="'+edt4.Text+'",telpon="'+edt5.Text+'",jenis_kelamin="'+cbb1.Text+'",pendidikan="'+edt6.Text+'",status="'+cbb3.Text+'",pekerjaan="'+edt7.Text+'",agama="'+cbb2.Text+'" where id_orangtua="'+edt1.Text+'"');
+zqry1.SQL.Add('Update tb_orangtua set id_orangtua= "'+edt1.Text+'",nik ="'+edt2.Text+'",nama_orangtua="'+edt3.Text+'",jenis_kelamin="'+cbb1.Text+'",alamat="'+edt4.Text+'",telpon="'+edt5.Text+'",pendidikan="'+edt6.Text+'",pekerjaan="'+edt7.Text+'",agama="'+cbb2.Text+'",status="'+cbb3.Text+'" where id_orangtua="'+edt1.Text+'"');
 zqry1. ExecSQL;
 
 zqry1.SQL.Clear;
@@ -239,18 +241,18 @@ begin
 edt1.Text:= zqry1.Fields[0].AsString; // DBGrid
 edt2.Text:= zqry1.Fields[1].AsString;
 edt3.Text:= zqry1.Fields[2].AsString;
-edt4.Text:= zqry1.Fields[3].AsString;
-cbb1.Text:= zqry1.Fields[4].AsString;
+cbb1.Text:= zqry1.Fields[3].AsString;
+edt4.Text:= zqry1.Fields[4].AsString;
 edt5.Text:= zqry1.Fields[5].AsString;
 edt6.Text:= zqry1.Fields[6].AsString;
 edt7.Text:= zqry1.Fields[7].AsString;
 cbb2.Text:= zqry1.Fields[8].AsString;
-cbb3.Text:= zqry1.Fields[8].AsString;
+cbb3.Text:= zqry1.Fields[9].AsString;
 edt1.Enabled:= True;
 edt2.Enabled:= True;
 edt3.Enabled:= True;
-edt4.Enabled:= True;
 cbb1.Enabled:= True;
+edt4.Enabled:= True;
 edt5.Enabled:= True;
 edt6.Enabled:= True;
 edt7.Enabled:= True;

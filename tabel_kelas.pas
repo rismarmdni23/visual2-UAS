@@ -85,19 +85,19 @@ procedure TForm4.btn2Click(Sender: TObject);
 begin
 if edt1.Text ='' then
 begin
-ShowMessage('ID SISWA TIDAK BOLEH KOSONG!');
+ShowMessage('ID KELAS TIDAK BOLEH KOSONG!');
 end else
 if edt2.Text ='' then
 begin
-ShowMessage('NISN SISWA TIDAK BOLEH KOSONG!');
+ShowMessage('NAMA TIDAK BOLEH KOSONG!');
 end else
 if edt3.Text ='' then
 begin
-ShowMessage('TEMPAT LAHIR SISWA TIDAK BOLEH KOSONG!');
+ShowMessage('JENIS TIDAK BOLEH KOSONG!');
 end else
 if cbb1.Text ='' then
 begin
-ShowMessage('JENIS KELAMIN SISWA TIDAK BOLEH KOSONG!');
+ShowMessage('JURUSAN TIDAK BOLEH KOSONG!');
 end else
 begin
 zqry1.SQL.Clear; //simpan
@@ -148,7 +148,7 @@ end else
 begin
 ShowMessage('DATA BERHASIL DIUPDATE!'); //EDIT
 zqry1.SQL.Clear;
-zqry1.SQL.Add('Update tb_kelas set id_kelas= "'+edt1.Text+'",nama_kelas ="'+edt2.Text+'",jenis="'+edt3.Text+'",",jurusan="'+cbb1.Text+'" where id_kelas="'+edt1.Text+'"');
+zqry1.SQL.Add('Update tb_kelas set id_kelas= "'+edt1.Text+'",nama_kelas ="'+edt2.Text+'",jenis="'+edt3.Text+'",jurusan="'+cbb1.Text+'" where id_kelas="'+edt1.Text+'"');
 zqry1. ExecSQL;
 
 zqry1.SQL.Clear;
@@ -188,7 +188,7 @@ begin
 edt1.Text:= zqry1.Fields[0].AsString; // DBGrid
 edt2.Text:= zqry1.Fields[1].AsString;
 edt3.Text:= zqry1.Fields[2].AsString;
-cbb1.Text:= zqry1.Fields[4].AsString;
+cbb1.Text:= zqry1.Fields[3].AsString;
 edt1.Enabled:= True;
 edt2.Enabled:= True;
 edt3.Enabled:= True;

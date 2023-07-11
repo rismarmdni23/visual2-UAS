@@ -1,8 +1,8 @@
 object Form3: TForm3
-  Left = 218
-  Top = 154
+  Left = 238
+  Top = 163
   Width = 1044
-  Height = 540
+  Height = 538
   Caption = 'ORANG TUA'
   Color = clMoneyGreen
   Font.Charset = DEFAULT_CHARSET
