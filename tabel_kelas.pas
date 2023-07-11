@@ -32,6 +32,7 @@ type
     ds1: TDataSource;
     frxrprt1: TfrxReport;
     frxdbdtst1: TfrxDBDataset;
+    btn8: TButton;
     procedure btn6Click(Sender: TObject);
     procedure btn7Click(Sender: TObject);
     procedure btn1Click(Sender: TObject);
@@ -43,6 +44,7 @@ type
     procedure btn4Click(Sender: TObject);
     procedure btn5Click(Sender: TObject);
     procedure dbgrd1CellClick(Column: TColumn);
+    procedure btn8Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -202,6 +204,11 @@ btn2.Enabled:= False;
 btn3.Enabled:= True;
 btn4.Enabled:= True;
 btn5.Enabled:= True;
+end;
+
+procedure TForm4.btn8Click(Sender: TObject);
+begin
+frxrprt1.showreport();
 end;
 
 end.

@@ -188,6 +188,15 @@ object Form4: TForm4
     TabOrder = 11
     OnClick = btn7Click
   end
+  object btn8: TButton
+    Left = 872
+    Top = 240
+    Width = 89
+    Height = 33
+    Caption = 'REPORT'
+    TabOrder = 12
+    OnClick = btn8Click
+  end
   object con1: TZConnection
     ControlsCodePage = cGET_ACP
     UTF8StringsAsWideField = False
