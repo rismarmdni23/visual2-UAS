@@ -190,15 +190,15 @@ end;
 
 procedure TForm2.btn3Click(Sender: TObject);
 begin
-if (edt1.Text= '') or (edt2.Text ='') or (edt3.Text= '') or (cbb1.Text ='') or (edt4.Text ='') or (edt5.Text ='')or (edt6.Text ='') or (edt7.Text ='') or (cbb2.Text ='')then
+if (edt1.Text= '') or (edt2.Text ='') or (edt3.Text= '') or (cbb1.Text ='') or (edt4.Text ='') or (edt5.Text ='')or (edt6.Text ='') or (edt7.Text ='') or (cbb2.Text ='') then
 begin
 ShowMessage('INPUTAN WAJIB DIISI!');
 end else
 begin
 ShowMessage('DATA BERHASIL DIUPDATE!'); //EDIT
 zqry1.SQL.Clear;
-zqry1.SQL.Add('Update tb_walikelas id_walikelas= "'+edt1.Text+'",nip ="'+edt2.Text+'",nama_walikelas="'+edt3.Text+'",jenis_kelamin="'+cbb1.Text+'",alamat="'+edt4.Text+'",matpel="'+edt5.Text+'",pendidikan="'+edt6.Text+'",telpon="'+edt7.Text+'",status="'+cbb2.Text+'" where id_walikelas="'+edt1.Text+'"');
-zqry1. ExecSQL;
+zqry1.SQL.Add('Update tb_walikelas set id_walikelas="'+edt1.Text+'",nip ="'+edt2.Text+'",nama_walikelas="'+edt3.Text+'",jenis_kelamin="'+cbb1.Text+'",alamat="'+edt4.Text+'",telpon="'+edt7.Text+'",matpel="'+edt5.Text+'",pendidikan="'+edt6.Text+'",status="'+cbb2.Text+'" where id_walikelas="'+edt1.Text+'"');
+zqry1.ExecSQL;
 
 zqry1.SQL.Clear;
 zqry1.SQL.Add('select * from tb_walikelas');

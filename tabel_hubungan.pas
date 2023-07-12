@@ -94,7 +94,7 @@ begin
 ShowMessage('ID TIDAK BOLEH KOSONG!');
 end else
 if edt2.Text ='' then
-begin
+  begin
 ShowMessage('SISWA ID TIDAK BOLEH KOSONG!');
 end else
 if edt3.Text ='' then
@@ -160,7 +160,7 @@ end else
 begin
 ShowMessage('DATA BERHASIL DIUPDATE!'); //EDIT
 zqry1.SQL.Clear;
-zqry1.SQL.Add('Update tb_hubunngan set id_hubungan "'+edt1.Text+'",id_siswa ="'+edt2.Text+'",id_ortu="'+edt3.Text+'",status_hubungan="'+cbb1.Text+'",keterangan="'+edt5.Text+'" where id_hubungan="'+edt1.Text+'"');
+zqry1.SQL.Add('Update tb_hubungan set id_hubungan="'+edt1.Text+'",id_siswa="'+edt2.Text+'",id_ortu="'+edt3.Text+'",status_hubungan="'+cbb1.Text+'",keteranggan="'+edt5.Text+'" where id_hubungan="'+edt1.Text+'"');
 zqry1. ExecSQL;
 
 zqry1.SQL.Clear;
